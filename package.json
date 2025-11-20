@@ -1,0 +1,28 @@
+{
+  "name": "incoming-webhook",
+  "version": "1.0.0",
+  "description": "Incoming webhok for TRA",
+  "main": "index.js",
+  "scripts": {
+    "vercel-build": "mvn clean install -DskipTests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BrowserStackCE/Incoming-Webhook.git"
+  },
+  "keywords": [
+    "WEbhook"
+  ],
+  "author": "Venkatesh Raghunathan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BrowserStackCE/Incoming-Webhook/issues"
+  },
+  "homepage": "https://github.com/BrowserStackCE/Incoming-Webhook#readme",
+  "devDependencies": {
+    "vercel": "^48.10.4",
+    "@vercel/node": "^3.0.0",
+    "@vercel/build-utils": "^7.0.0",
+    "@vercel/static-build": "^2.0.0"
+  }
+}

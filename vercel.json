@@ -1,0 +1,27 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "pom.xml",
+      "use": "@vercel/build-maven",
+      "config": {
+        "outputDirectory": "target",
+        "buildCommand": "mvn clean install -DskipTests"
+      }
+    },
+    {
+      "src": "target/*.jar",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/webhooks/(.*)",
+      "dest": "target/webhook-processor-0.0.1-SNAPSHOT.jar"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "target/webhook-processor-0.0.1-SNAPSHOT.jar"
+    }
+  ]
+}
