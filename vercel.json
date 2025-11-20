@@ -3,11 +3,7 @@
   "builds": [
     {
       "src": "pom.xml",
-      "use": "@vercel/build-maven",
-      "config": {
-        "outputDirectory": "target",
-        "buildCommand": "mvn clean install -DskipTests"
-      }
+
     },
     {
       "src": "target/*.jar",
