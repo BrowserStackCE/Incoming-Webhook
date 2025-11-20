@@ -4,7 +4,6 @@
   "description": "Incoming webhok for TRA",
   "main": "index.js",
   "scripts": {
-    "vercel-build": "mvn clean install -DskipTests"
   },
   "repository": {
     "type": "git",
